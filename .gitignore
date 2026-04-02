@@ -1,0 +1,7 @@
+backend/venv/
+frontend/node_modules/
+.env
+dist/
+**pycache**/
+*.log
+prompt.txt
