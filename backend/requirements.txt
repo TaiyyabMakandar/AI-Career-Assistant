@@ -1,6 +1,7 @@
 fastapi
-uvicorn
+uvicorn[standard]
 python-dotenv
 huggingface-hub
 PyPDF2
 python-multipart
+httpx

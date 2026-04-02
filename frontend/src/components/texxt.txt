@@ -1,94 +1,49 @@
-Upload my project **"AI Career Assistant"** to GitHub in a clean and professional way.
+Update the project with the latest backend URL and required dependencies, then push the changes to GitHub.
 
-## Repository:
+## Tasks:
 
-[git@github.com](mailto:git@github.com):TaiyyabMakandar/AI-Career-Assistant.git
+### 1. Update API URL
 
----
+Open frontend API file (api.js) and replace the existing base URL with:
 
-## Steps:
+https://ai-career-assistant-vykq.onrender.com/api
 
-### 1. Remove unnecessary files:
-
-* backend/.env
-* backend/venv
-* frontend/node_modules
-* frontend/dist
-* all **pycache** folders
+Ensure all API calls use this updated URL.
 
 ---
 
-### 2. Create `.gitignore` in root:
+### 2. Update requirements.txt
 
-backend/venv/
-frontend/node_modules/
-.env
-dist/
-**pycache**/
-*.log
-prompt.txt
+Open backend/requirements.txt and make sure it contains:
 
----
-
-### 3. Create environment example file:
-
-File: backend/.env.example
-
-Content:
-HF_TOKEN=your_token_here
-MODEL_ID=meta-llama/Llama-3.2-1B-Instruct
+fastapi
+uvicorn[standard]
+python-dotenv
+huggingface-hub
+PyPDF2
+python-multipart
+httpx
 
 ---
 
-### 4. Ensure required files are present:
-
-* backend/app/
-* backend/requirements.txt
-* frontend/src/
-* frontend/package.json
-* frontend/vite.config.js
-* README.md
+### 3. Save all changes
 
 ---
 
-### 5. Initialize clean Git repository:
+### 4. Push to GitHub
 
-rm -rf .git
-git init
-
----
-
-### 6. Add and commit:
+Run:
 
 git add .
-git commit -m "Initial clean project upload"
-
----
-
-### 7. Connect to GitHub repository:
-
-git remote add origin [git@github.com](mailto:git@github.com):TaiyyabMakandar/AI-Career-Assistant.git
-
----
-
-### 8. Push to GitHub:
-
-git branch -M main
-git push -f origin main
-
----
-
-## Rules:
-
-* Do NOT upload `.env`
-* Do NOT upload node_modules or venv
-* Ensure no GitHub errors (GH013)
-* Keep repository clean and professional
+git commit -m "Update API URL and requirements for deployment"
+git push
 
 ---
 
 ## Goal:
 
-Successfully upload the project to GitHub without errors and make it ready for deployment.
+* Frontend should connect to the correct live backend
+* Backend dependencies should be complete for deployment
+* Changes should be successfully pushed to GitHub
 
-Execute all steps and confirm once completed.
+Proceed and confirm once completed.
